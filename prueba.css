@@ -1,0 +1,61 @@
+/* Estilos generales para el navbar (puedes personalizarlos) */
+.navbar {
+    background-color: #333; /* Color de fondo */
+    color: white;            /* Color del texto */
+    padding: 10px 0;        /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    position: relative;     /* Importante para posicionar el ícono */
+    width: 100%;            /*asegurar que el navbar tenga todo el ancho*/
+}
+
+.navbar-container {
+  display: flex;             /* Convertir en un contenedor flexible */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center;       /* Centrar verticalmente */
+  max-width: 1200px;       /* Ancho máximo (opcional) */
+  margin: 0 auto;            /* Centrar horizontalmente (si tiene max-width) */
+  padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;       /* Tamaño del texto de la marca */
+    font-weight: bold;      /* Negrita */
+    text-decoration: none;  /* Quitar subrayado */
+    color: inherit;         /* Heredar color del navbar */
+}
+
+.navbar-menu {
+    list-style: none;       /* Quitar viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex;           /* Mostrar elementos en línea */
+}
+
+.navbar-menu li {
+    margin-left: 20px;     /* Espacio entre elementos del menú */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 12px;      /* Espaciado interno */
+    border-radius: 5px;    /* Bordes redondeados (opcional) */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el contenedor del ícono */
+.navbar-icon-container{
+    display: flex;
+    align-items: center; /* Centrar verticalmente el ícono dentro del contenedor */
+}
+
+/* Estilos específicos para el ícono */
+.navbar-icon {
+    width: 30px;        /* Ancho del ícono (ajusta según tu necesidad) */
+    height: auto;       /* Altura automática para mantener la proporción */
+    margin-left: 10px; /*Pequeño espacio a la izquierda del icono si es necesario*/
+}
